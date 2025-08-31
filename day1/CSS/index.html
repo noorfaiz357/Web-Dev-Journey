@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS One Shot</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+   <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+    #container{
+        height: 10px;
+        width: 200px;
+        background-color: antiquewhite;
+        margin: 300px auto;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+    #bar{
+        background-color: green;
+        height: 100%;
+        animation:barrr 3s linear 3s 1 normal ;
+    }
+    @keyframes barrr {
+        0%{
+            width: 0%;
+        }
+        90%{
+            width: 95%;
+        }
+        95%{
+            width: 80%;
+        }
+        100%{
+            width: 100%;
+            
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="bar"></div>
+    </div>
+</body>
+</html>
