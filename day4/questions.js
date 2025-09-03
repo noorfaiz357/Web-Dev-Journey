@@ -145,4 +145,5 @@ function count(arr) {
   }
   return counts;
 }
-console.log(count([1, 2, 2, 3, 3, 3, 4, 4, 4, 4]));
+console.log(count([1, 2, 2, 3, 3, 3, 4, 4, 4, 4,4]));
+

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Handling in JS</title>
+    <style>
+      h3 {
+        text-transform: capitalize;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      #main {
+        width: 100%;
+        height: 100%;
+        background-color: #222;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #main h1 {
+        color: #555;
+        font-size: 10rem;
+        font-weight: 300;
+      }
+      #input {
+        display: none;
+      }
+      #btn {
+        padding: 12px 22px;
+        background-color: green;
+        color: white;
+        border-radius: 5px;
+      }
+      #btn:hover {
+        background-color: rgb(4, 94, 4);
+      }
+      /*Form*/
+      #form_div {
+        width: 100%;
+        min-height: 100%;
+        background-color: #221;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 200px;
+      }
+      form input {
+        display: block;
+        background-color: #555;
+        color: #d2d2d2;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        border: 1px solid #cbcbcb
+      }
+      #cards{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+        flex-wrap: ;
+      }
+      .card{
+        min-width: 300px;
+        max-width: 400px;
+        color: white;
+        padding: 20px;
+        border: 2px solid #999;
+        display: inline-block;
+        margin-top: 40px;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .profile{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        overflow: hidden;
+      }
+      .profile img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .card h5{
+        margin-top: 5px;
+
+      }
+      .card p{
+        font-size: 12px;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hi There</h1>
+    <p>Kaise ho ? sub theek ?</p>
+
+    <input type="text" placeholder="name" />
+
+    <div>
+      <h3>Select your device</h3>
+      <select>
+        <option selected disabled>Choose Your Devices</option>
+        <option value="samsung">Samsung</option>
+        <option value="oppo">Oppo</option>
+        <option value="vivo">Vivo</option>
+        <option value="tecno">Tecno</option>
+      </select>
+    </div>
+
+    <div id="main">
+      <!-- <h1>a</h1> -->
+      <input type="file" id="input" />
+      <div id="btn">Upload File</div>
+    </div>
+    <div id="form_div">
+      <form action="">
+          <input type="profile pic" placeholder="profile pic">
+        <input type="text" placeholder="name">
+        <input type="text" placeholder="occupation">
+        <input type="text" placeholder="info">
+        <input type="submit">
+      </form>
+      <div id="cards">
+
+      </div>
+    </div>
+    <script src="events.js"></script>
+  </body>
+</html>
