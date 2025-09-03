@@ -140,7 +140,6 @@ let updatedStdt ={
 console.log(newStdt)
 console.log(updatedStdt)
 
-
 //Rest--->Allows a function to take indefinite number of arguments and bundle them in an array.
 
 //it comes in ES6 else there was arguments. ja ke net pe search mar aur pata karle.
@@ -169,3 +168,26 @@ let stdtName = stdt.name
 let {name,...rest} = stdt//using rest
 console.log(stdtName)
 console.log(name)
+
+//Destructuring in JS--->Store values in variables from objects or arrays.
+
+console.log("Destructuring")
+//Array Destructuring
+let players = ["noor", "faiz", "ali","hasan","hussain"]
+let [winner, runnerUp, ...restPlayers] = players
+console.log(winner)
+console.log(runnerUp)
+console.log(restPlayers)
+//Object Destructuring
+let info = {
+    name : "faiz",
+    age : 19,
+    course : "BSCS"
+}
+console.log(info)
+let {name : nam,city:place="okara", ...others} = info//we can change variable names like this.
+console.log(nam)
+console.log(place)
+console.log(others)
+console.log(info)
+
