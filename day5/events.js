@@ -94,7 +94,7 @@ form.addEventListener("submit",(e)=>{
     // p.textContent= "bara hi berozgar nalla hai ye ik number ka aur university se chuttian bhi karta hai ganda bacha hai ye."
     p.textContent = inputs[3].value
 
-    let main = document.querySelector("#form_div")
+    let main = document.querySelector("#cards")
 
     profile.appendChild(img)
     card.appendChild(profile)
