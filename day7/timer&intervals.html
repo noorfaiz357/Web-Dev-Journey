@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timers & Intervals in JavaScript</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:'sans-serif';
+
+      }
+      body,
+      html {
+        width: 100%;
+        height: 100%;
+        color: white;
+      }
+      #main {
+        background-color: #222;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .download_card {
+
+        height: 200px;
+        width: 350px;
+        background-color: #2c2c2c;
+        border-radius: 15px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: white;
+        padding: 20px 30px;
+      }
+      .progress-container {
+        background-color: #222;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 10px;
+        height: 7px;
+        width: 100%;
+      }
+      .progress-bar {
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.662);
+      }
+      #main h3,
+      #main h2 {
+        text-align: center;
+        font-weight: lighter;
+      }
+/*Alert Banner*/
+
+      #alert_main{
+
+        height: 100%;
+        width: 100%;
+        background-color: #2c2c2c;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      #alert_container{
+        height: 150px;
+        width: 300px;
+        background-color: #282828;
+        padding: 20px 30px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        left: -300px;
+        transition: .3s all ease-in;
+          }
+    #alert_container p{
+        font-size: 12px;
+    }
+  button{
+    background-color: gainsboro;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+
+  }
+
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div class="download_card">
+        <h2>Download Progress</h2>
+        <div class="progress-container">
+          <div class="progress-bar"></div>
+        </div>
+        <div class="progress_percentage"><h3>0%</h3></div>
+      </div>
+    </div>
+    <div id="alert_main">
+        <div id="alert_container">
+            <h2>Alert!</h2>
+            <p>You just made an alert to show the actual usage of setTimeout and setInterval in JavaScript.</p>
+        </div>
+        <button>Alert!!!</button>
+    </div>
+    <script src="timer&intervals.js"></script>
+  </body>
+</html>
