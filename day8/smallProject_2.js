@@ -171,17 +171,15 @@ function showCards() {
     card.appendChild(buttonsDiv);
 
     stack.appendChild(card)
+
   });
+   let lastChild = stack.lastElementChild
+    if(lastChild){
+        stack.insertBefore(lastChild, stack.firstElementChild)
+        //update
+    }
 }
 showCards()
-
-// function updateStack(){
-//     const cards = document.querySelectorAll(".stack .card")
-//     cards.forEach((card, index)=>{
-//         card.style.zIndex = 3 - index;
-//         card.style.transform
-//     })
-// }
 
 upBtn.addEventListener("click",(e)=>{
     let lastChild = stack.lastElementChild

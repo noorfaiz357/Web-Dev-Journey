@@ -1,0 +1,77 @@
+   *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body,html{
+            width: 100%;
+            height: 100%;
+        }
+        body{
+            background-color: #222;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .calculator{
+            border-radius: 10px;
+            height: 550px;
+            width: 360px;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 30px;
+            flex-wrap: nowrap;
+            border: 2px solid rgb(98, 98, 98);
+            justify-content: space-between;
+            background-color: #2e2e2e;
+        }
+        .buttons_container{
+            display: flex;
+            gap: 12px;
+            width: 100%;
+            flex-direction: column;
+            justify-content: space-between;
+
+        }
+        .buttons_container div{
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            flex: 1;
+        }
+        button{
+            background-color: #222;
+            color: white;
+            border-radius: 10px;
+            height: 70px;
+            width: 70px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border : 1px solid #545c4b
+        }
+        button:hover{
+            transform: scale(.97);
+            box-shadow: 0 0 5px #00000046;
+            border: 1px solid #4f4f4fc6;
+        }
+        input{
+            color: #fefefe;
+            width: 100%;
+            padding: 12px 24px;
+            font-size: 40px;
+            font-weight: bold;
+            border: 2px solid #676767;
+            background-color: #232323;
+            border-radius: 10px;
+        }
+        .result{
+            background-color: rgb(250, 165, 7);
+        }
+        .operator{
+            background-color: rgb(122, 161, 44);
+            opacity: .7;
+        }
+        .operator:hover{
+            opacity: .9;
+        }
