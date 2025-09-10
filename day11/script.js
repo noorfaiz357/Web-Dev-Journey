@@ -321,7 +321,6 @@ function startQuiz(){
     score = 0;
     currentQuestionIndex = 0
     scoreSpan.textContent = 0
-    progressBar.style.width = 0
 
     startScreen.classList.remove("active")
     quizScreen.classList.add("active")
@@ -333,8 +332,8 @@ function showQuestion(){
     const currentQuestion = quizQuestions[currentQuestionIndex]
     currentQuestionSpan.textContent = currentQuestionIndex + 1
 
-    const progressPercent = (currentQuestionIndex + 1 / quizQuestions.length) * 100
-    progressBar.style.width = progressPercent +  "%"
+    const progressPercent = (currentQuestionIndex / quizQuestions.length) * 100
+    progressBar.style.width = progressPercent+"%"
 
     questionText.textContent = currentQuestion.question
 
