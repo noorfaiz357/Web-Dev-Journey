@@ -71,234 +71,234 @@ const quizQuestions = [
       { text: "Broad Peak", correct: false },
       { text: "Rakaposhi", correct: false }
     ]
-   }//,
-  // {
-  //   question: "What is the national animal of Pakistan?",
-  //   answers: [
-  //     { text: "Snow Leopard", correct: false },
-  //     { text: "Markhor", correct: true },
-  //     { text: "Chinkara", correct: false },
-  //     { text: "Lion", correct: false }
-  //   ]
-  // },
-  // {
-  //   question: "Which city is called the ‘City of Lights’?",
-  //   answers: [
-  //     { text: "Lahore", correct: false },
-  //     { text: "Karachi", correct: true },
-  //     { text: "Islamabad", correct: false },
-  //     { text: "Multan", correct: false }
-  //   ]
-  // },
-  // {
-  //   question: "What is the national flower of Pakistan?",
-  //   answers: [
-  //     { text: "Sunflower", correct: false },
-  //     { text: "Jasmine", correct: true },
-  //     { text: "Rose", correct: false },
-  //     { text: "Tulip", correct: false }
-  //   ]
-  // },
-  // {
-  //   question: "Who was Pakistan’s first Prime Minister?",
-  //   answers: [
-  //     { text: "Liaquat Ali Khan", correct: true },
-  //     { text: "Zulfikar Ali Bhutto", correct: false },
-  //     { text: "Ayub Khan", correct: false },
-  //     { text: "Benazir Bhutto", correct: false }
-  //   ]
-  // },
-  // {
-  //   question: "Which is the largest province of Pakistan by area?",
-  //   answers: [
-  //     { text: "Punjab", correct: false },
-  //     { text: "Sindh", correct: false },
-  //     { text: "Balochistan", correct: true },
-  //     { text: "Khyber Pakhtunkhwa", correct: false }
-  //   ]
-  // },
-  // {
-  //   question: "Which currency is used in Pakistan?",
-  //   answers: [
-  //     { text: "Taka", correct: false },
-  //     { text: "Rupee", correct: true },
-  //     { text: "Dinar", correct: false },
-  //     { text: "Dirham", correct: false }
-  //   ]
-  // },
-  // {
-  //   question: "Which river is known as the lifeline of Pakistan?",
-  //   answers: [
-  //     { text: "Indus River", correct: true },
-  //     { text: "Jhelum River", correct: false },
-  //     { text: "Chenab River", correct: false },
-  //     { text: "Ravi River", correct: false }
-  //   ]
-  // },
-  // {
-  //   question: "What is the national sport of Pakistan?",
-  //   answers: [
-  //     { text: "Hockey", correct: true },
-  //     { text: "Cricket", correct: false },
-  //     { text: "Football", correct: false },
-  //     { text: "Kabaddi", correct: false }
-  //   ]
-  // },
-  // {
-  //   question: "Which port is the busiest in Pakistan?",
-  //   answers: [
-  //     { text: "Gwadar Port", correct: false },
-  //     { text: "Port Qasim", correct: false },
-  //     { text: "Karachi Port", correct: true },
-  //     { text: "Ormara Port", correct: false }
-  //   ]
-  // },
-  // {
-  //   question: "Who composed Pakistan’s national anthem?",
-  //   answers: [
-  //     { text: "Allama Iqbal", correct: false },
-  //     { text: "Hafeez Jullundhri", correct: true },
-  //     { text: "Ahmad Ghulamali Chagla", correct: false },
-  //     { text: "Faiz Ahmed Faiz", correct: false }
-  //   ]
-  // },
+   },
+  {
+    question: "What is the national animal of Pakistan?",
+    answers: [
+      { text: "Snow Leopard", correct: false },
+      { text: "Markhor", correct: true },
+      { text: "Chinkara", correct: false },
+      { text: "Lion", correct: false }
+    ]
+  },
+  {
+    question: "Which city is called the ‘City of Lights’?",
+    answers: [
+      { text: "Lahore", correct: false },
+      { text: "Karachi", correct: true },
+      { text: "Islamabad", correct: false },
+      { text: "Multan", correct: false }
+    ]
+  },
+  {
+    question: "What is the national flower of Pakistan?",
+    answers: [
+      { text: "Sunflower", correct: false },
+      { text: "Jasmine", correct: true },
+      { text: "Rose", correct: false },
+      { text: "Tulip", correct: false }
+    ]
+  },
+  {
+    question: "Who was Pakistan’s first Prime Minister?",
+    answers: [
+      { text: "Liaquat Ali Khan", correct: true },
+      { text: "Zulfikar Ali Bhutto", correct: false },
+      { text: "Ayub Khan", correct: false },
+      { text: "Benazir Bhutto", correct: false }
+    ]
+  },
+  {
+    question: "Which is the largest province of Pakistan by area?",
+    answers: [
+      { text: "Punjab", correct: false },
+      { text: "Sindh", correct: false },
+      { text: "Balochistan", correct: true },
+      { text: "Khyber Pakhtunkhwa", correct: false }
+    ]
+  },
+  {
+    question: "Which currency is used in Pakistan?",
+    answers: [
+      { text: "Taka", correct: false },
+      { text: "Rupee", correct: true },
+      { text: "Dinar", correct: false },
+      { text: "Dirham", correct: false }
+    ]
+  },
+  {
+    question: "Which river is known as the lifeline of Pakistan?",
+    answers: [
+      { text: "Indus River", correct: true },
+      { text: "Jhelum River", correct: false },
+      { text: "Chenab River", correct: false },
+      { text: "Ravi River", correct: false }
+    ]
+  },
+  {
+    question: "What is the national sport of Pakistan?",
+    answers: [
+      { text: "Hockey", correct: true },
+      { text: "Cricket", correct: false },
+      { text: "Football", correct: false },
+      { text: "Kabaddi", correct: false }
+    ]
+  },
+  {
+    question: "Which port is the busiest in Pakistan?",
+    answers: [
+      { text: "Gwadar Port", correct: false },
+      { text: "Port Qasim", correct: false },
+      { text: "Karachi Port", correct: true },
+      { text: "Ormara Port", correct: false }
+    ]
+  },
+  {
+    question: "Who composed Pakistan’s national anthem?",
+    answers: [
+      { text: "Allama Iqbal", correct: false },
+      { text: "Hafeez Jullundhri", correct: true },
+      { text: "Ahmad Ghulamali Chagla", correct: false },
+      { text: "Faiz Ahmed Faiz", correct: false }
+    ]
+  },
 
-  // // -------- Islam (15) --------
-  // {
-  //   question: "What is the first pillar of Islam?",
-  //   answers: [
-  //     { text: "Zakat", correct: false },
-  //     { text: "Shahada", correct: true },
-  //     { text: "Hajj", correct: false },
-  //     { text: "Sawm", correct: false }
-  //   ]
-  // },
-  // {
-  //   question: "Which is the holy book of Islam?",
-  //   answers: [
-  //     { text: "Torah", correct: false },
-  //     { text: "Bible", correct: false },
-  //     { text: "Quran", correct: true },
-  //     { text: "Vedas", correct: false }
-  //   ]
-  // },
-  // {
-  //   question: "In which city was Prophet Muhammad (PBUH) born?",
-  //   answers: [
-  //     { text: "Medina", correct: false },
-  //     { text: "Jerusalem", correct: false },
-  //     { text: "Mecca", correct: true },
-  //     { text: "Baghdad", correct: false }
-  //   ]
-  // },
-  // {
-  //   question: "How many daily prayers are obligatory in Islam?",
-  //   answers: [
-  //     { text: "3", correct: false },
-  //     { text: "4", correct: false },
-  //     { text: "5", correct: true },
-  //     { text: "6", correct: false }
-  //   ]
-  // },
-  // {
-  //   question: "What is the Islamic month of fasting called?",
-  //   answers: [
-  //     { text: "Shawwal", correct: false },
-  //     { text: "Muharram", correct: false },
-  //     { text: "Ramadan", correct: true },
-  //     { text: "Safar", correct: false }
-  //   ]
-  // },
-  // {
-  //   question: "Which city is known as the second holiest city in Islam?",
-  //   answers: [
-  //     { text: "Mecca", correct: false },
-  //     { text: "Jerusalem", correct: false },
-  //     { text: "Medina", correct: true },
-  //     { text: "Cairo", correct: false }
-  //   ]
-  // },
-  // {
-  //   question: "What is the pilgrimage to Mecca called?",
-  //   answers: [
-  //     { text: "Sawm", correct: false },
-  //     { text: "Zakat", correct: false },
-  //     { text: "Hajj", correct: true },
-  //     { text: "Umrah", correct: false }
-  //   ]
-  // },
-  // {
-  //   question: "Which direction do Muslims face during prayer?",
-  //   answers: [
-  //     { text: "Jerusalem", correct: false },
-  //     { text: "Kaaba in Mecca", correct: true },
-  //     { text: "Mount Sinai", correct: false },
-  //     { text: "Medina", correct: false }
-  //   ]
-  // },
-  // {
-  //   question: "What is the giving of charity called in Islam?",
-  //   answers: [
-  //     { text: "Sawm", correct: false },
-  //     { text: "Hajj", correct: false },
-  //     { text: "Zakat", correct: true },
-  //     { text: "Shahada", correct: false }
-  //   ]
-  // },
-  // {
-  //   question: "Which angel brought revelation to the Prophet Muhammad (PBUH)?",
-  //   answers: [
-  //     { text: "Mikail", correct: false },
-  //     { text: "Israfil", correct: false },
-  //     { text: "Jibreel (Gabriel)", correct: true },
-  //     { text: "Azrael", correct: false }
-  //   ]
-  // },
-  // {
-  //   question: "What is the Islamic declaration of faith called?",
-  //   answers: [
-  //     { text: "Shahada", correct: true },
-  //     { text: "Takbir", correct: false },
-  //     { text: "Tasbeeh", correct: false },
-  //     { text: "Tahajjud", correct: false }
-  //   ]
-  // },
-  // {
-  //   question: "Which night is considered the Night of Power in Ramadan?",
-  //   answers: [
-  //     { text: "Laylat al-Qadr", correct: true },
-  //     { text: "Eid al-Fitr", correct: false },
-  //     { text: "Ashura", correct: false },
-  //     { text: "Shab-e-Miraj", correct: false }
-  //   ]
-  // },
-  // {
-  //   question: "How many chapters (Surahs) are in the Quran?",
-  //   answers: [
-  //     { text: "100", correct: false },
-  //     { text: "114", correct: true },
-  //     { text: "120", correct: false },
-  //     { text: "99", correct: false }
-  //   ]
-  // },
-  // {
-  //   question: "Which festival marks the end of Ramadan?",
-  //   answers: [
-  //     { text: "Eid al-Adha", correct: false },
-  //     { text: "Eid al-Fitr", correct: true },
-  //     { text: "Ashura", correct: false },
-  //     { text: "Mawlid", correct: false }
-  //   ]
-  // },
-  // {
-  //   question: "What is the Islamic lunar calendar called?",
-  //   answers: [
-  //     { text: "Hijri Calendar", correct: true },
-  //     { text: "Gregorian Calendar", correct: false },
-  //     { text: "Solar Calendar", correct: false },
-  //     { text: "Julian Calendar", correct: false }
-  //   ]
-  // }
+  // -------- Islam (15) --------
+  {
+    question: "What is the first pillar of Islam?",
+    answers: [
+      { text: "Zakat", correct: false },
+      { text: "Shahada", correct: true },
+      { text: "Hajj", correct: false },
+      { text: "Sawm", correct: false }
+    ]
+  },
+  {
+    question: "Which is the holy book of Islam?",
+    answers: [
+      { text: "Torah", correct: false },
+      { text: "Bible", correct: false },
+      { text: "Quran", correct: true },
+      { text: "Vedas", correct: false }
+    ]
+  },
+  {
+    question: "In which city was Prophet Muhammad (PBUH) born?",
+    answers: [
+      { text: "Medina", correct: false },
+      { text: "Jerusalem", correct: false },
+      { text: "Mecca", correct: true },
+      { text: "Baghdad", correct: false }
+    ]
+  },
+  {
+    question: "How many daily prayers are obligatory in Islam?",
+    answers: [
+      { text: "3", correct: false },
+      { text: "4", correct: false },
+      { text: "5", correct: true },
+      { text: "6", correct: false }
+    ]
+  },
+  {
+    question: "What is the Islamic month of fasting called?",
+    answers: [
+      { text: "Shawwal", correct: false },
+      { text: "Muharram", correct: false },
+      { text: "Ramadan", correct: true },
+      { text: "Safar", correct: false }
+    ]
+  },
+  {
+    question: "Which city is known as the second holiest city in Islam?",
+    answers: [
+      { text: "Mecca", correct: false },
+      { text: "Jerusalem", correct: false },
+      { text: "Medina", correct: true },
+      { text: "Cairo", correct: false }
+    ]
+  },
+  {
+    question: "What is the pilgrimage to Mecca called?",
+    answers: [
+      { text: "Sawm", correct: false },
+      { text: "Zakat", correct: false },
+      { text: "Hajj", correct: true },
+      { text: "Umrah", correct: false }
+    ]
+  },
+  {
+    question: "Which direction do Muslims face during prayer?",
+    answers: [
+      { text: "Jerusalem", correct: false },
+      { text: "Kaaba in Mecca", correct: true },
+      { text: "Mount Sinai", correct: false },
+      { text: "Medina", correct: false }
+    ]
+  },
+  {
+    question: "What is the giving of charity called in Islam?",
+    answers: [
+      { text: "Sawm", correct: false },
+      { text: "Hajj", correct: false },
+      { text: "Zakat", correct: true },
+      { text: "Shahada", correct: false }
+    ]
+  },
+  {
+    question: "Which angel brought revelation to the Prophet Muhammad (PBUH)?",
+    answers: [
+      { text: "Mikail", correct: false },
+      { text: "Israfil", correct: false },
+      { text: "Jibreel (Gabriel)", correct: true },
+      { text: "Azrael", correct: false }
+    ]
+  },
+  {
+    question: "What is the Islamic declaration of faith called?",
+    answers: [
+      { text: "Shahada", correct: true },
+      { text: "Takbir", correct: false },
+      { text: "Tasbeeh", correct: false },
+      { text: "Tahajjud", correct: false }
+    ]
+  },
+  {
+    question: "Which night is considered the Night of Power in Ramadan?",
+    answers: [
+      { text: "Laylat al-Qadr", correct: true },
+      { text: "Eid al-Fitr", correct: false },
+      { text: "Ashura", correct: false },
+      { text: "Shab-e-Miraj", correct: false }
+    ]
+  },
+  {
+    question: "How many chapters (Surahs) are in the Quran?",
+    answers: [
+      { text: "100", correct: false },
+      { text: "114", correct: true },
+      { text: "120", correct: false },
+      { text: "99", correct: false }
+    ]
+  },
+  {
+    question: "Which festival marks the end of Ramadan?",
+    answers: [
+      { text: "Eid al-Adha", correct: false },
+      { text: "Eid al-Fitr", correct: true },
+      { text: "Ashura", correct: false },
+      { text: "Mawlid", correct: false }
+    ]
+  },
+  {
+    question: "What is the Islamic lunar calendar called?",
+    answers: [
+      { text: "Hijri Calendar", correct: true },
+      { text: "Gregorian Calendar", correct: false },
+      { text: "Solar Calendar", correct: false },
+      { text: "Julian Calendar", correct: false }
+    ]
+  }
 ];
 
 
