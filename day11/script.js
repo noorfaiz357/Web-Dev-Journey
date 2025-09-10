@@ -309,7 +309,7 @@ let score = 0
 let answerDisabled = false
 
 maxScore.textContent = quizQuestions.length
-totalQuesitonsSpan.textContent = quizQuestions.length
+totalQuestionsSpan.textContent = quizQuestions.length
 
 //event listeners
 
