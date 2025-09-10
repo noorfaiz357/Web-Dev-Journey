@@ -26,7 +26,7 @@ const allButtons      = document.querySelectorAll('button');
 
 
 const quizQuestions = [
-  // -------- Pakistan (15) --------
+  // --------   Pakistan (15) --------
   {
     question: "Who is the founder of Pakistan?",
     answers: [
@@ -400,7 +400,7 @@ function showResults(){
     else if(percentage >= 60){
         resultMessage.textContent = "Good effort! Keep Learning!"
     }
-    else if(percentage >= 40){
+    else if(percentage >= 400){
         resultMessage.textContent = "Not bad! Try again to improve!"
     }
     else{

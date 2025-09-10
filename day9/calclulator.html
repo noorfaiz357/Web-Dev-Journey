@@ -5,43 +5,153 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
     <link rel="stylesheet" href="calculator.css" />
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body,html{
+            width: 100%;
+            height: 100%;
+        }
+        body{
+            background-color: #222;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .calculator{
+            border-radius: 10px;
+            height: 550px;
+            width: 360px;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 30px;
+            flex-wrap: nowrap;
+            border: 2px solid rgb(98, 98, 98);
+            justify-content: space-between;
+            background-color: #2e2e2e;
+        }
+        .buttons_container{
+            display: flex;
+            gap: 12px;
+            width: 100%;
+            flex-direction: column;
+            justify-content: space-between;
+
+        }
+        .buttons_container div{
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            flex: 1;
+        }
+        button{
+            background-color: #222;
+            color: white;
+            border-radius: 10px;
+            height: 70px;
+            width: 70px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border : 1px solid #545c4b
+        }
+        button:hover{
+            transform: scale(.97);
+            box-shadow: 0 0 5px #00000046;
+            border: 1px solid #4f4f4fc6;
+        }
+        input{
+            color: #fefefe;
+            width: 100%;
+            padding: 12px 24px;
+            font-size: 40px;
+            font-weight: bold;
+            border: 2px solid #676767;
+            background-color: #232323;
+            border-radius: 10px;
+        }
+        .result{
+            background-color: rgb(250, 165, 7);
+        }
+        .operator{
+            background-color: rgb(122, 161, 44);
+            opacity: .7;
+        }
+        .operator:hover{
+            opacity: .9;
+        }
+    </style>
   </head>
   <body>
     <div class="calculator">
-      <input type="text" placeholder="0" />
+      <input pattern="{0-9}[0-9]" type="text" placeholder="0" />
       <div class="buttons_container">
         <div>
-            <button class="clear">AC</button>
-            <button  class="delete">DEL</button>
-            <button>%</button>
-            <button>/</button>
+            <button class="operator" >AC</button>
+            <button  class="operator">DEL</button>
+            <button class="operator">%</button>
+            <button class="operator">/</button>
         </div>
       <div>
             <button>7</button>
             <button>8</button>
             <button>9</button>
-            <button>*</button>
+            <button class="operator">*</button>
         </div>
       <div>
             <button value="4">4</button>
             <button>5</button>
             <button>6</button>
-            <button>-</button>
+            <button class="operator">-</button>
         </div>
       <div>
             <button>1</button>
             <button>2</button>
             <button>3</button>
-            <button>+</button>
+            <button class="operator">+</button>
         </div>
       <div>
             <button>00</button>
             <button>0</button>
             <button>.</button>
-            <button class="result">=</button>
+            <button class="result func">=</button>
         </div>
       </div>
     </div>
-    <script src="calculator.js"></script>
+    <script src="calculator.js">
+      let input = document.querySelector("input")
+let buttons = document.querySelectorAll("button")
+
+let string = ""
+
+buttons.forEach((button)=>{
+    button.addEventListener("click",(e)=>{
+        console.log("pressed")
+        if(e.target.textContent === "="){
+            console.log("hello")
+            string = eval(string) //eval is inbuilt function
+        input.value = string;
+        }
+
+        else if(e.target.textContent ==="AC"){
+            string = ""
+            input.value = string
+        }
+        else if(e.target.textContent ==="DEL"){
+            
+            string = string.slice(0,-1)
+            input.value = string
+        }
+        else{
+             string = string + e.target.textContent
+         input.value = string
+        }
+     
+    })
+})
+    </script>
   </body>
 </html>
