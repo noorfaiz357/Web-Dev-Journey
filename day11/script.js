@@ -10,7 +10,7 @@ const restartBtn      = document.querySelector('#restart-btn');
 // Quiz content
 const questionText    = document.querySelector('#question-text');
 const currentQuestionSpan = document.querySelector('#current-question');
-const totalQuesitonsSpan = document.querySelector("#total-questions")
+const totalQuestionsSpan = document.querySelector("#total-questions")
 const scoreSpan       = document.querySelector('#score');
 const answersContainer= document.querySelector('#answers-container');
 const progressBar     = document.querySelector('#progress');
