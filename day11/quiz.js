@@ -400,7 +400,7 @@ function showResults(){
     else if(percentage >= 60){
         resultMessage.textContent = "Good effort! Keep Learning!"
     }
-    else if(percentage >= 400){
+    else if(percentage >= 40){
         resultMessage.textContent = "Not bad! Try again to improve!"
     }
     else{
