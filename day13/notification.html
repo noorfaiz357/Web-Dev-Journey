@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toaster Notification</title>
+    <style>
+
+      *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+      html, body{
+          height: 100%;
+          width: 100%;
+          background-color: #222;
+      }
+      .left{
+          position: fixed;
+          left: 10px;
+        align-items: start;
+
+      }
+      .right{
+          position: fixed;
+          right: 10px;
+        align-items: end;
+
+      }
+      .top{
+          position: fixed;
+          top :10px;
+
+      }
+      .bottom{
+          position: fixed;
+          bottom: 10px;
+      }
+      .toaster-container{
+          padding: 10px;
+          display: flex;
+          flex-direction: column;
+          gap: 3px;
+      }
+      .dark{
+           background-color: rgba(128, 128, 128, 0.849);
+          color:rgba(255, 255, 255, 0.961);
+      }
+      .light {
+          background-color: aliceblue;
+          color: black;
+      }
+      .notification{
+          display: inline-block;
+          padding: 10px 16px;
+          border-radius: 5px;
+          box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+          cursor: pointer;
+          transition: all ease .3s;
+          text-align: left;
+          font-size: .8rem;
+          font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="toaster-container"></div>
+
+    <script src="notification.js"></script>
+  </body>
+</html>
