@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>fetch Api</title>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-900 flex items-center justify-center min-h-screen">
+  </head>
+  <body class="bg-gray-900 flex items-center justify-center min-h-screen">
+    <button style="background-color: white">Refresh</button>
 
-    <div id="card-container" class="card-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-
-
-        <div class="w-[350px] h-[200px] bg-gray-800 rounded-lg shadow-lg overflow-hidden flex">
-            <img class="w-1/3 h-full object-cover" src="https://via.placeholder.com/300" alt="User Image">
-            <div class="p-4 flex flex-col justify-center">
-                <h2 class="text-lg font-semibold text-white">John Doe</h2>
-                <p class="text-gray-400 text-sm">Software Engineer</p>
-                <p class="text-gray-500 text-xs mt-2">Location: San Francisco, CA</p>
-            </div>
+    <div
+      id="card-container"
+      class="card-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+    >
+      <div
+        class="w-[350px] h-[200px] bg-gray-800 rounded-lg shadow-lg overflow-hidden flex"
+      >
+        <img
+          class="w-1/3 h-full object-cover"
+          src="https://via.placeholder.com/300"
+          alt="User Image"
+        />
+        <div class="p-4 flex flex-col justify-center">
+          <h2 class="text-lg font-semibold text-white">John Doe</h2>
+          <p class="text-gray-400 text-sm">Software Engineer</p>
+          <p class="text-gray-500 text-xs mt-2">Location: San Francisco, CA</p>
         </div>
-
-
-    
+      </div>
     </div>
 
-    <button style="background-color: white;">Refresh</button>
     <script src="fetch.js"></script>
-</body>
+  </body>
 </html>
