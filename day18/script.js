@@ -35,3 +35,33 @@ async function abcd(){
     }
 
 abcd()//instead of then and catch we can use async/await as shown in above...if promise is resolved to result try me aye ga...otherwise catch me aye ga!!!
+
+
+
+function saveToDb(data){
+
+    return new Promise((resolve, reject)=>{
+        let n = Math.floor(Math.random()*10)
+        if(n>4){
+            resolve("resolved")
+        }
+        else{
+            reject("rejected")
+        }
+    })
+
+}
+
+saveToDb("popla pichu")
+.then((res)=>{
+    console.log(res)
+    console.log("success 1 : data was saved")
+    return saveToDb("Billu bichu")
+})
+.then((res)=>{
+    console.log(res)
+    console.log("Success 2 : Data was saved")
+})
+.catch((err)=>{
+    console.log(err)
+})
