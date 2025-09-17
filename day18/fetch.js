@@ -68,7 +68,28 @@ document.querySelector("#card-container").appendChild(card);
 
 getUsers()
 
-document.querySelector("button").addEventListener("click",()=>{
+document.querySelector("#refresh").addEventListener("click",()=>{
     console.log("refreshed")
     getUsers()
 })
+
+
+function getFact(){
+    let fact = document.querySelector(".fact")
+    fetch("https://catfact.ninja/fact")
+.then((raw)=>{
+    return raw.json()
+})
+.then((data)=>{
+    fact.textContent = data.fact
+})
+.catch((err)=> console.log(err + ", nahi bhai nai howa fetch"))
+}
+getFact()
+document.querySelector(".factbtn").addEventListener("click",getFact)
+
+
+
+fetch('https://programming-quotesapi.vercel.app/api/random')
+    .then(response => response.json())
+    .then(quote => console.log(quote))

@@ -3,21 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>fetch Api</title>
+    <title>Fetch API</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-gray-900 flex items-center justify-center min-h-screen">
-    <button style="background-color: white">Refresh</button>
+  <body class="bg-gray-900">
+    <button id="refresh" class="bg-white text-gray-800 px-4 py-2 rounded shadow-md hover:bg-gray-200">
+      Refresh
+    </button>
 
     <div
       id="card-container"
-      class="card-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6"
     >
       <div
-        class="w-[350px] h-[200px] bg-gray-800 rounded-lg shadow-lg overflow-hidden flex"
+        class="w-full bg-gray-800 rounded-lg shadow-lg overflow-hidden flex flex-col sm:flex-row"
       >
         <img
-          class="w-1/3 h-full object-cover"
+          class="w-full sm:w-1/3 h-48 sm:h-full object-cover"
           src="https://via.placeholder.com/300"
           alt="User Image"
         />
@@ -27,6 +29,18 @@
           <p class="text-gray-500 text-xs mt-2">Location: San Francisco, CA</p>
         </div>
       </div>
+
+      <!-- Add more cards here -->
+    </div>
+
+    <div class="fact-container text-center mt-8">
+      <h1 class="text-2xl font</div>-bold text-white">Get Cat Facts</h1>
+      <p class="fact text-gray-400 mt-4">This is a cat fact</p>
+      <button
+        class="factbtn mt-4 bg-white text-gray-800 px-4 py-2 rounded shadow-md hover:bg-gray-200"
+      >
+        Get new
+      </button>
     </div>
 
     <script src="fetch.js"></script>
