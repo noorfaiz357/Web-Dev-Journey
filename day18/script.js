@@ -14,9 +14,24 @@ let pr = new Promise(function(resolve,reject){
     },1000)
 })
 
-pr.then((val)=>{
-console.log(val)
-})
-.catch((val)=>{
-console.log(val)
-})
+// pr.then((val)=>{
+// console.log(val)
+// })
+// .catch((val)=>{
+// console.log(val)
+// })
+
+
+///Async Await...!!!/////
+//a more clean way to handle resolve reject and promises
+
+async function abcd(){
+    try{
+        let val = await pr
+    console.log("we got pr wiht value : " + val)
+} catch(err){
+    console.log(err)
+}
+    }
+
+abcd()//instead of then and catch we can use async/await as shown in above...if promise is resolved to result try me aye ga...otherwise catch me aye ga!!!
