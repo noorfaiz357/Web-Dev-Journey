@@ -31,7 +31,7 @@
         max-width: 350px;
         width: 90%;
         border-radius: 15px;
-     background: linear-gradient(135deg, #FC466B, #3F5EFB);
+     background: linear-gradient(135deg, #ba304c, #2c45c4);
         box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
         padding: 1rem 2rem;
         display: flex;
@@ -63,7 +63,7 @@
         border: none;
         padding: 10px;
         /* background: linear-gradient(135deg, #1c717d, #d50c0c); */
-     background: linear-gradient(135deg, #FC466B, #3F5EFB);
+     background: linear-gradient(135deg, #ba304c, #2c45c4);
 
         border-radius: 10px;
         font-size: 14px;
@@ -79,7 +79,7 @@
         flex-grow: 1;
       }
       .info-container {
-        display: flex;
+        display: none;
         padding: 2rem 1rem;
         flex-direction: column;
         justify-content: center;
@@ -100,7 +100,9 @@
         justify-content: space-between;
         width: 100%;
       }
-
+      .col > p:first-of-type{
+        font-weight: bold;
+      }
       p {
         font-size: 1rem;
       }
@@ -122,16 +124,16 @@
         <div class="error"><p>sorry invalid input!!!</p></div>
         <div class="info-container">
           <div class="temp-container">
-            <h1 id="temp">38 C</h1>
-            <h2 id="city">Okara</h2>
+            <h1 id="temp"></h1>
+            <h2 id="city"></h2>
           </div>
           <div class="info">
             <div class="col">
-              <p id="humidity">26.6</p>
+              <p id="humidity"></p>
               <p>humidity</p>
             </div>
             <div class="col">
-              <p id="wind">26.6</p>
+              <p id="wind"></p>
               <p>Wind Speed</p>
             </div>
           </div>
