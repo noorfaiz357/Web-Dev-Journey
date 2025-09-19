@@ -1,7 +1,7 @@
+const input = document.getElementById("input");
 const button = document.getElementById("submit");
 
 button.addEventListener("click", (e) => {
-  const input = document.getElementById("input");
   if (input.value.trim() !== "") {
     let city = input.value;
     fetchWeather(city);
@@ -13,14 +13,12 @@ button.addEventListener("click", (e) => {
 
 function fetchWeather(city) {
   const api = "94de8477c67029a2bd2fa2e8e9923fa1";
-  let info = document.querySelector(".info-container")
-  let error = document.querySelector(".error")
   fetch(
     `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api}&units=metric`
   )
     .then((raw) => {
-      info.style.display = "flex";
-      error.style.display = "none";
+      document.querySelector(".info-container").style.display = "flex";
+      document.querySelector(".error").style.display = "none";
       return raw.json();
     })
     .then((data) => {
@@ -28,8 +26,8 @@ function fetchWeather(city) {
     })
     .catch((err) => {
       console.log("error hai bhai : " + err);
-      info.style.display = "none";
-      error.style.display = "initial";
+      document.querySelector(".info-container").style.display = "none";
+      document.querySelector(".error").style.display = "initial";
     });
 }
 
@@ -39,7 +37,7 @@ function weather(data) {
   let humidity = document.getElementById("humidity");
   let wind = document.getElementById("wind");
   // console.log(data)
-  let temp = Math.round(data.main.temp);
+  let temp = Math.round(data.main.temp);  
   tempField.innerHTML = temp + "&deg;C";
   cityField.textContent = data.name;
   wind.textContent = data.wind.speed + " Km/H";
