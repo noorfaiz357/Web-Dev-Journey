@@ -228,3 +228,24 @@ cook.apply(adam, ["rice", "beans", "water"])
 
 const cookForAdam = cook.bind(adam, "rice", "beans")
 cookForAdam()
+
+//20. What is Event Delegation?
+//A technique that allows you to manage events for multiple elements more efectively by using a single event listener on a common parent element rather than on each individual child element.
+//we can add eventlistener to childs using parent basically.
+//in this way we dont have to make many event listeners for childs.
+//it improves performance, clean code, and most importantly handles dynamic elements!!!!!
+
+// let items = document.querySelectorAll("#itemlist li")
+
+// items.forEach(item => {
+//     item.addEventListener("click",function(){
+//         console.log("clicked", this.textContent)
+//     })
+// });
+// //above is normal way of adding eventlisteners to child, let's use event delegation below : 
+
+let list = document.querySelector("#itemlist")
+list.addEventListener("click",(e)=>{
+    console.log("clicked", e.target.textContent)
+})
+
