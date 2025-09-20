@@ -249,3 +249,98 @@ list.addEventListener("click",(e)=>{
     console.log("clicked", e.target.textContent)
 })
 
+//21. Explain the Event loop in JavaScript?
+//it's like ke js kisi ka intizar ni kare gi...it'll finish off other tasks during the execution of async js.
+
+console.log("Start");//outputs first
+
+setTimeout(() => {
+    console.log("setTimeout Callback");//output forth
+}, 0);
+
+Promise.resolve().then(() => {
+    console.log("Promise Resolved");//output third
+});
+
+console.log("End");//outputs second
+
+//22. Diff between Promise and Async/Await?
+function fetchData1(){
+    return Promise.resolve("bullu fetch data!!!"); // Return a Promise
+}
+function fetchData2(data){
+    return Promise.resolve(data + " gugglu billu!!!"); // Return a Promise
+}
+// fetchData1()
+// .then(result1 => {
+//     return fetchData2(result1)
+// })
+// .then(result2=>{
+//     console.log(result2)
+// })
+// .catch(err=>{
+// console.log(err)
+// })
+//instead of writing above then catch statement we can use this async/await for better clean and good code.
+async function  fetchMyData() {
+    try{
+       const result1 =  await fetchData1()
+       const result2 = await fetchData2(result1)
+       console.log(result2)
+    } catch(err){
+        console.log("error hai bhaiya..bullu ne error mar dia!!!")
+    }
+}
+
+fetchMyData()
+//async/await is a cleaner, more readable way to handle Promises.
+//promises are the underlying mechanism
+
+//23. Purpose of Reduce method in arrays.
+//The reduce() in JS isused to reduce an array to a single value by applying a func on each element in the array.
+//we have a current value and accumulator(by default start me 0 hoti hai)
+
+let num = [1,2,3,4,5]
+
+let sum = num.reduce((accu, current)=>{
+    return accu+current;
+}, 10/*set default value of accumulaor*/)
+
+console.log(sum)
+
+const h = ["js", "html", "css"];
+let strLength = h.reduce((accu, str)=>accu + str.length, 0)
+console.log(strLength)
+
+//24. Explain the concept of Currying in JS?
+//Currying is a concept in Functional Programming in JS where a func that take multiple arguments is transformed into a sequence of functions, each acception a single argument.
+
+// Normal Function
+// function add(a, b) {
+//     return a + b;
+// }
+// console.log(add(2, 3)); 
+
+// Function Currying
+function add(a) {
+    return function(b) {
+        return a + b;
+    }
+}
+const addTwo = add(5); // First function call with 5
+console.log(addTwo(4));//and we can keep changing these.
+console.log(addTwo(3))//and we can keep changing these.
+console.log(addTwo(5))//and we can keep changing these.
+console.log(addTwo(8))//and we can keep changing these.
+//it makes code more flexible and usable.
+
+//25. What is Generator Function and how it is used ?
+//A generator function in JS is a special type of function that can pause the execution and resume it later.
+
+function* inifiniteFunction(){
+    let num = 1 ;
+    while(true){
+        yield num;
+        num ++
+    }
+}
