@@ -209,4 +209,22 @@ async function fetchData() {
     }
 }
 
-fetchData()
+// fetchData()
+
+//19. Diff between Call, Apply and Bind
+//call---> invokes the function immediately, with this set to thisArg, and accepts arguments one by one
+function cook(ing1,ing2){
+    console.log(`${this.name} is having a meal with ${ing1} and ${ing2}`)
+}
+
+const adam = {name : "Adam"}
+cook.call(adam, "rice", "beans", "water")
+
+//apply--->invokes the function immediately, with this set to thisArg, but accepts arguments as an array.
+
+cook.apply(adam, ["rice", "beans", "water"])
+
+//bind--->Returns a new function with this set to thisArg, and any present arguments, but doesn't invoke it immediately.
+
+const cookForAdam = cook.bind(adam, "rice", "beans")
+cookForAdam()
