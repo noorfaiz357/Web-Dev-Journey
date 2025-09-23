@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Typing Test</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .cursor {
+      display: inline-block;
+      width: 2px;
+      background-color: #60a5fa;
+      animation: blink 1s steps(2, start) infinite;
+    }
+    @keyframes blink {
+      to { visibility: hidden; }
+    }
+    .char {
+      transition: color 0.2s ease, background-color 0.2s ease;
+    }
+    .char.correct { color: #4ade80; }
+    .char.incorrect { color: #f87171; }
+    .char.active { border-bottom: 2px solid #60a5fa; }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-100 font-mono flex flex-col items-center min-h-screen p-6">
+  <!-- Header -->
+  <header class="w-full max-w-4xl text-center mb-8">
+    <h1 class="text-3xl font-bold text-blue-400">Typing Test</h1>
+    <p class="text-gray-400">Type the text below as quickly and accurately as you can!</p>
+  </header>
+
+  <!-- Typing Area -->
+  <main class="w-full max-w-3xl bg-gray-800 rounded-2xl p-6 shadow-lg">
+    <div id="text" class="text-xl leading-relaxed select-none">
+      <!-- Pre-rendered text spans -->
+    </div>
+    <div class="flex justify-center mt-6">
+      <input id="typingInput" type="text" 
+             class="bg-gray-700 text-gray-100 rounded-md p-2 w-1/2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+             placeholder="Start typing here..." autofocus />
+    </div>
+  </main>
+
+  <!-- Stats -->
+  <section class="w-full max-w-3xl mt-8 flex justify-around bg-gray-800 p-4 rounded-xl shadow-md">
+    <div class="text-center">
+      <p class="text-gray-400">WPM</p>
+      <p id="wpm" class="text-2xl font-bold">0</p>
+    </div>
+    <div class="text-center">
+      <p class="text-gray-400">Accuracy</p>
+      <p id="accuracy" class="text-2xl font-bold">100%</p>
+    </div>
+    <div class="text-center">
+      <p class="text-gray-400">Time</p>
+      <p id="time" class="text-2xl font-bold">60s</p>
+    </div>
+  </section>
+
+  <script>
+    const sampleText = "The quick brown fox jumps over the lazy dog.";
+    const textContainer = document.getElementById("text");
+    const input = document.getElementById("typingInput");
+
+    // Pre-render characters
+    sampleText.split("").forEach((ch, idx) => {
+      const span = document.createElement("span");
+      span.textContent = ch;
+      span.classList.add("char");
+      if (idx === 0) span.classList.add("active");
+      textContainer.appendChild(span);
+    });
+
+    const chars = document.querySelectorAll(".char");
+    let index = 0;
+
+    input.addEventListener("input", () => {
+      const value = input.value;
+      const currentChar = chars[index];
+      if (!currentChar) return;
+
+      if (value[value.length - 1] === currentChar.textContent) {
+        currentChar.classList.add("correct");
+      } else {
+        currentChar.classList.add("incorrect");
+      }
+      currentChar.classList.remove("active");
+      index++;
+      if (chars[index]) chars[index].classList.add("active");
+    });
+  </script>
+</body>
+</html>
