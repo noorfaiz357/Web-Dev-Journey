@@ -84,6 +84,9 @@ input[type = "checkbox"]:checked::before{
 }
 
 /* TYPE CONTENT */
+.type_content{
+    margin-block: 20px;
+}
 
 .type_content input{
     position: absolute;
@@ -92,11 +95,53 @@ input[type = "checkbox"]:checked::before{
 
 }
 .type_content p{
-    font-size: 1.4rem;
-    max-height: 30vh;
+    font-size: 1.3rem;
+    max-height: 40vh;
     overflow-y: auto;
     letter-spacing: 1px;
-    word-spacing: 2px;
+    word-spacing: 3px;
     text-align: justify;
     text-align-last: center;
+    scrollbar-width: thin;
+    padding: 1;
+}
+::selection{
+    background-color:  #9834d2;
+    color: white;
+}
+.type_content p::-webkit-scrollbar {
+  width: 6px;
+}
+.type_content p::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 10px;
+}
+.type_content p::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+/* BOTTOM PART */
+
+.bottom_part{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 60px;
+    box-shadow:-1px -1px 16px 8px rgb(153 122 219 / 17%);
+}
+
+.bottom_part p{
+    font-size: 1.1rem;
+}
+.bottom_part button{
+     padding: 10px 20px;
+    background: linear-gradient(45deg, #61d7fb 0%, #ff5acd 100%);
+    border: none;
+    border-radius: 7px;
+    color: white;
+    transition: .2s all ease;
+    
+}
+.bottom_part button:hover{
+    transform: scale(1.1);
 }
