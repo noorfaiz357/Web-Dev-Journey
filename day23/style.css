@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 body,html{
@@ -19,6 +21,7 @@ body{
 .box{
 width: 70%;
 padding:1.3rem;
+max-height: 70vh;
 background-color: white;
 }
 .top_part{
@@ -37,7 +40,6 @@ background-color: white;
 .title_part h2 {
     font-size: 2rem;
     opacity: .7;
-    font-family: Arial, Helvetica, sans-serif;
 }
 .sound{
     position: relative;
@@ -47,7 +49,6 @@ background-color: white;
 }
 .sound span{
     margin-right: 10px;
-    font-family: Arial, Helvetica, sans-serif;
     opacity: .6;
 }
 input[type = "checkbox"]{
@@ -80,4 +81,22 @@ input[type = "checkbox"]:checked{
 }
 input[type = "checkbox"]:checked::before{
     left: 27px;
+}
+
+/* TYPE CONTENT */
+
+.type_content input{
+    position: absolute;
+    z-index: -99;
+    opacity: 0;
+
+}
+.type_content p{
+    font-size: 1.4rem;
+    max-height: 30vh;
+    overflow-y: auto;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-align: justify;
+    text-align-last: center;
 }
